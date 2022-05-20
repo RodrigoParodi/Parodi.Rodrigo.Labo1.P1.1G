@@ -102,6 +102,19 @@ int main() {
 			listarTrabajos(lista, TAMC, trabajos, tiposServicios, TAMS);
 			break;
 		case 10:
+			switch(menuInformes())
+			{
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			}
+			break;
+		case 11:
 			respuesta = preguntaSalirDelMenu();
 			break;
 		default:

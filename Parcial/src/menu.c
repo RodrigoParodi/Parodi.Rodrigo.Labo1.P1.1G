@@ -48,7 +48,8 @@ int menuPrincipal(){
 	printf("7)LISTAR SERVICIOS.\n");
 	printf("8)ALTA TRABAJO.\n");
 	printf("9)LISTAR TRABAJOS.\n");
-	printf("10)Salir.\n\n");
+	printf("10)INFORMES.\n");
+	printf("11)Salir.\n\n");
 
 	printf("Eliga que opcion desea iniciar : ");
 	fflush(stdin);
@@ -93,6 +94,21 @@ int menuModificarMascota(){
 
     return opcion;
 
+}
+
+int menuInformes(){
+	int opcion;
+
+    printf("     *** Menu de informes ***\n\n");
+    printf("1. Informe.\n");
+    printf("2. Informe.\n");
+    printf("3. Informe.\n");
+    printf("4. Informe.\n");
+    printf("Ingrese opcion: ");
+    fflush(stdin);
+    scanf("%d", &opcion);
+
+    return opcion;
 }
 
 

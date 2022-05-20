@@ -18,11 +18,13 @@ char preguntaSalirDelMenu();
 /// @return respuesta   retorna el valor de 's' si queremos salir o 'n' si no queremos salir
 int menuPrincipal();
 /// Menu principal donde aparecen las opciones a elegir
-/// @return todoOK
+/// @return opcion
 char preguntaSalirDelMenuModificar();
 /// Este menu pregunta si queremos salir del menu de opciones del menu de modificar
 /// @return respuesta   retorna el valor de 's' si queremos salir o 'n' si no queremos salir
 int menuModificarMascota();
 /// Menu principal de modificar mascota donde aparecen las opciones a elegir
-/// @return todoOK
-
+/// @return opcion
+int menuInformes();
+///Muestra el menu de informes
+/// @return opcion       opcion que el usuario desea realizar
