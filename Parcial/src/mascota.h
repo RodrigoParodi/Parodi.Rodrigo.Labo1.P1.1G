@@ -76,3 +76,15 @@ int ordenarMascotas(eMascota vec[], int tam);
 /// @param eMascota vec[]
 /// @param int tam
 /// @return todoOK
+int ordenarMascotasXId(eMascota vec[], int tam);
+/// Ordena a las mascotas por numero id de manera acendente
+/// @param eMascota vec[]
+/// @param int tam
+/// @return todoOK
+int hardcodearMascotas(eMascota vec[], int tam, int cant, int* pNextId);
+/// Esta funcion hardcodea algunas mascotas en el sistema
+/// @param eMascota vec[]
+/// @param int tam
+/// @param int cant
+/// @param int* pNextId
+/// @return todoOK

@@ -11,7 +11,7 @@
 #include "menu.h"
 #include "validaciones.h"
 
-#define TAMC 10
+#define TAMC 20
 #define TAM 5
 #define TAMS 3
 
@@ -53,6 +53,8 @@ int main() {
 	initTrabajos(trabajos, TAMC);
 
 	printf("Hola bienvenido!!!\n");
+
+	hardcodearMascotas(lista, TAMC, 10, &proximoId);
 
 	do{
 

@@ -262,7 +262,7 @@ int modificarMascota(eMascota vec[], int tam, eTipo tipos[], eColor colores[], i
 
     if( vec != NULL && tam > 0 )
     {
-
+    	ordenarMascotasXId(vec, tam);
     	if(listarMascotas(vec, tam, tipos, colores, tamSec) == 0)
     	{
     		        printf("Ingrese id: ");
@@ -419,4 +419,59 @@ int ordenarMascotas(eMascota vec[], int tam){
     return todoOk;
 }
 
+int hardcodearMascotas(eMascota vec[], int tam, int cant, int* pNextId){
+
+    int todoOk = 0;
+    eMascota mascotas[10] =
+    {
+        {0, "Pepe", 1002, 5002, 10, 's'},
+		{0, "Mora", 1001, 5001, 5, 's'},
+		{0, "Alem", 1003, 5000, 3, 'n'},
+		{0, "Peter", 1000, 5002, 12, 's'},
+		{0, "Lola", 1004, 5004, 8, 'n'},
+        {0, "Bianca", 1000, 5000, 15, 'n'},
+		{0, "Manuela", 1003, 5004, 2, 's'},
+		{0, "Saimon", 1001, 5003, 6, 's'},
+		{0, "Artur", 1002, 5002, 1, 's'},
+		{0, "Angel", 1000, 5003, 9, 's'}
+    };
+
+    if( vec != NULL && pNextId != NULL && tam > 0 && tam <= 20 && cant <= tam)
+    {
+        for(int i=0; i < cant; i++)
+        {
+            vec[i] = mascotas[i];
+            vec[i].id = *pNextId;
+            (*pNextId)++;
+        }
+        todoOk = 1;
+    }
+    return todoOk;
+
+}
+
+int ordenarMascotasXId(eMascota vec[], int tam){
+
+    int todoOk = 0;
+    eMascota auxMascota;
+
+    if( vec != NULL && tam > 0)
+    {
+        for(int i=0; i < tam - 1; i++)
+        {
+            for(int j= i+1; j < tam; j++)
+            {
+                if(vec[i].id > vec[j].id)
+                {
+                	auxMascota = vec[i];
+
+                    vec[i] = vec[j];
+                    vec[j] = auxMascota;
+                }
+            }
+        }
+        todoOk = 1;
+    }
+    return todoOk;
+}
 
