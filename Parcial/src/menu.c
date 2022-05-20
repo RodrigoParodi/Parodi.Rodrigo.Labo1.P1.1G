@@ -100,10 +100,13 @@ int menuInformes(){
 	int opcion;
 
     printf("     *** Menu de informes ***\n\n");
-    printf("1. Informe.\n");
-    printf("2. Informe.\n");
-    printf("3. Informe.\n");
-    printf("4. Informe.\n");
+    printf("1. Informe Mascotas de Mismo color.\n");
+    printf("2. Informe promedio de mascotas vacunadas y total.\n");
+    printf("3. Informe mascota o mascotas de menor edad.\n");
+    printf("4. Lista de mascotas separadas por tipo.\n");
+    printf("5. Total de mascotas por X tipo o X color.\n");
+    printf("6. Color con mas cantidad de mascotas.\n");
+    printf("7. Trabajos realizados a una mascota.\n");
     printf("Ingrese opcion: ");
     fflush(stdin);
     scanf("%d", &opcion);

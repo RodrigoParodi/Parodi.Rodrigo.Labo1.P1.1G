@@ -10,6 +10,7 @@
 #include "trabajo.h"
 #include "menu.h"
 #include "validaciones.h"
+#include "informes.h"
 
 #define TAMC 20
 #define TAM 5
@@ -105,12 +106,24 @@ int main() {
 			switch(menuInformes())
 			{
 			case 1:
+				mostrarMascotasColor(lista, tiposMascotas,  tiposColores, TAMC, TAM);
 				break;
 			case 2:
+				promedioMascotasVacunadas(lista, TAMC);
 				break;
 			case 3:
+				mostrarMascotasEdadMinima(lista, tiposMascotas,  tiposColores, TAMC, TAM);
 				break;
 			case 4:
+				listarMascotasPorTipo(lista, TAMC);
+				listarMascotas(lista, TAMC, tiposMascotas, tiposColores, TAM);
+				break;
+			case 5:
+				cantidadDeTipoYColor(lista, tiposMascotas,  tiposColores, TAMC, TAM);
+				break;
+			case 6:
+				break;
+			case 7:
 				break;
 			}
 			break;

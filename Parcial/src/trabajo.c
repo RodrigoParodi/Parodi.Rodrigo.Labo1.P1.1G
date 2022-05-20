@@ -230,5 +230,3 @@ int cargarNombreMascota(eMascota tipos[], int tam, int id, char desc[]){
 
 
 
-
-
